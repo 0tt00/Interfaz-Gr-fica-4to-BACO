@@ -1,0 +1,15 @@
+ private void button8_Click(object sender, EventArgs e)
+        {
+            string message = "¿Está seguro de Salir?";
+            string title = "Cerrar Ventana ";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result = MessageBox.Show(message, title, buttons);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
+            else
+            {
+                //Hacer otra acción.
+            }
+        }
