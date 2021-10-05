@@ -1,0 +1,24 @@
+ private void button2_Click_1(object sender, EventArgs e)
+        {
+            string nombre, contra;
+
+            nombre = Convert.ToString(textBox1.Text);
+            contra = Convert.ToString(textBox2.Text);
+
+            if (nombre == "Jeremy" && contra == "12345")
+            {
+                button1.Enabled = true;
+                label4.Text = "Validación Exitosa Puede Continuar";
+                pictureBox1.Visible = true;
+            }
+            else
+            {
+                label4.Text = "Validación Incorrecta Intente Nuevamente";
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox1.Focus();
+                pictureBox1.Visible = false;
+            }
+
+            
+        }
