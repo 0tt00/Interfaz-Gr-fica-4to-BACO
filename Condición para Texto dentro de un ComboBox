@@ -1,0 +1,36 @@
+   private void button1_Click(object sender, EventArgs e)
+        {
+            if (comboBox2.Text == "Efectivo")
+            {
+                label3.Visible = true;
+                textBox1.Visible = true;
+                label8.Visible = false;
+                textBox3.Visible = false;
+                label5.Visible = true;
+                label9.Visible = true;
+                label10.Visible = true;
+                textBox2.Visible = true;
+                textBox4.Visible = true;
+                textBox5.Visible = true;
+                button9.Visible = true;
+            
+             }
+            else
+            {
+                label3.Visible = false;
+                textBox1.Visible = false;
+                label8.Visible = true;
+                textBox3.Visible = true;
+                label5.Visible = true;
+                label9.Visible = true;
+                label10.Visible = false;
+                textBox2.Visible = true;
+                textBox4.Visible = true;
+                textBox5.Visible = false;
+                button9.Visible = false;
+            }
+            
+
+
+
+        }
