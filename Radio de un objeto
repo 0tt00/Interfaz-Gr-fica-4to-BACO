@@ -1,0 +1,10 @@
+  private void button5_Click(object sender, EventArgs e)
+        {
+            double r, resultado;
+            r = Convert.ToDouble(textBox3.Text);
+
+            if (comboBox1.Text == "Circulo")
+            {
+                resultado = 3.1416 * r * r;
+                textBox4.Text = " = " + resultado;
+            }
