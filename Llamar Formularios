@@ -4,5 +4,6 @@
 
             f2.label1.Text = "Hola: " + textBox1.Text;
 
+            this.Hide();
             f2.Show();
         }
