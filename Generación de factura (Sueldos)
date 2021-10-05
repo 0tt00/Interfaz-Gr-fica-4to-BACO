@@ -1,0 +1,43 @@
+ private void button6_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+            listBox1.Items.Clear();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            int sueldobase, sueldoporhora, horastrabajadas;
+
+            sueldoporhora = Convert.ToInt32(textBox2.Text);
+
+            horastrabajadas = Convert.ToInt32(textBox4.Text);
+
+            sueldobase = sueldoporhora * horastrabajadas;
+            listBox1.Items.Add("");
+            listBox1.Items.Add("NOMBRE: " + textBox1.Text);
+            listBox1.Items.Add("");
+            listBox1.Items.Add("SUELDO BASE: Q" + sueldobase);
+            listBox1.Items.Add("");
+            int sueldoextra, horasextras;
+
+            horasextras = Convert.ToInt32(textBox5.Text);
+
+            sueldoextra = horasextras * sueldoporhora * 2;
+
+            listBox1.Items.Add("HORAS EXTRAS: Q" + sueldoextra);
+            listBox1.Items.Add("");
+            int sueldoneto;
+
+            sueldoneto = sueldobase + sueldoextra;
+
+            listBox1.Items.Add("SUELDO NETO: Q" + sueldoneto);
+            
+        }
