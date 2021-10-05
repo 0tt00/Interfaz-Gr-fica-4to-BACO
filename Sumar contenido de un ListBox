@@ -1,0 +1,14 @@
+ private void button9_Click(object sender, EventArgs e)
+        {
+            double total = 0;
+
+            foreach(object item in listBox1.Items)
+            {
+                total += Convert.ToDouble(item);
+                label6.Text = (total).ToString();
+            }
+
+            
+            
+    
+        }
