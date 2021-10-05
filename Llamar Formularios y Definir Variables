@@ -1,0 +1,89 @@
+  private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 f3 = new Form3();
+
+            f3.label2.Text = label1.Text;
+            f3.label3.Text = label7.Text;
+            f3.label4.Text =  textBox2.Text;
+            f3.label5.Text = "Q " + textBox1.Text + " .00";
+            f3.label6.Text = textBox3.Text;
+
+            if (comboBox1.Text == "A")
+            {
+                f3.label7.Text = "A";
+            }
+
+            if (comboBox1.Text == "B")
+            {
+                f3.label7.Text = "B";
+            }
+
+            if (comboBox1.Text == "C")
+            {
+                f3.label7.Text = "C";
+            }
+
+            double  sueldobase, hijos, resultado;
+
+            
+            sueldobase = Convert.ToDouble(textBox1.Text);
+            hijos = Convert.ToDouble(textBox3.Text);
+
+            if (comboBox1.Text == "A")
+            {
+                sueldobase = sueldobase - 0.3;
+
+                if (hijos >= 3)
+                {
+                    resultado = sueldobase + 1000 * hijos;
+
+                }
+
+                else
+                {
+                    resultado = sueldobase + 200;
+                }
+
+                f3.label1.Text = " =  Q " + resultado  ;
+            }
+
+            if (comboBox1.Text == "B")
+            {
+                sueldobase = sueldobase - 0.1;
+
+                if (hijos >= 3)
+                {
+                    resultado = sueldobase + 1000 * hijos;
+
+                }
+
+                else
+                {
+                    resultado = sueldobase + 200;
+                }
+
+                f3.label1.Text = " =  Q " + resultado ;
+            }
+
+            if (comboBox1.Text == "C")
+            {
+                sueldobase = sueldobase - 0.2;
+
+                if (hijos >= 3)
+                {
+                    resultado = sueldobase + 1000 * hijos;
+
+                }
+
+                else
+                {
+                    resultado = sueldobase + 200;
+                }
+
+                f3.label1.Text = " =  Q " + resultado ;
+            }
+
+            this.Hide();
+            f3.Show();
+
+        }
