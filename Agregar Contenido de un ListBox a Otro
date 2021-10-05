@@ -1,0 +1,16 @@
+ private void button8_Click(object sender, EventArgs e)
+        {
+            Form3 f3 = new Form3();
+            f3.label6.Text = label6.Text;
+            f3.label7.Text = label4.Text;
+
+            
+            FORMULA PARA AÑADIR UN LISTBOX EN OTRO.
+                  
+            f3.listBox1.Items.AddRange(listBox1.Items);
+            f3.listBox2.Items.AddRange(listBox2.Items);
+
+            this.Hide();
+            f3.Show();
+
+        }
