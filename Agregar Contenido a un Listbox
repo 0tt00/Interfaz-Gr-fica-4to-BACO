@@ -1,0 +1,26 @@
+ private void button2_Click(object sender, EventArgs e)
+        {
+            Form4 f4 = new Form4();
+
+            //ListBox2 
+            f4.listBox1.Items.AddRange(listBox1.Items);
+            f4.listBox2.Items.AddRange(listBox2.Items);
+            f4.listBox2.Items.Add("―――――――――――――――――――――――――――――――――――――");
+            f4.listBox2.Items.Add("Total");
+            f4.listBox2.Items.Add("――――――――――――――――――――――――――――――――――――――");
+            f4.listBox2.Items.Add("Nombre");
+            f4.listBox2.Items.Add("―――――――――――――――――――――――――――――――――――――");
+            f4.listBox2.Items.Add("Forma de Pago");
+            f4.listBox2.Items.Add("―――――――――――――――――――――――――――――――――――――");
+            f4.listBox2.Items.Add("Monto del Pago");
+            f4.listBox2.Items.Add("―――――――――――――――――――――――――――――――――――――");
+            f4.listBox2.Items.Add("DPI");
+            f4.listBox2.Items.Add("――――――――――――――――――――――――――――――――――――――");
+            f4.listBox2.Items.Add("NIT");
+            f4.listBox2.Items.Add("――――――――――――――――――――――――――――――――――――――");
+            f4.listBox2.Items.Add("Cambio");
+            f4.listBox2.Items.Add("――――――――――――――――――――――――――――――――――――――");
+            
+            this.Hide();
+            f4.Show();
+
